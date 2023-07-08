@@ -71,7 +71,7 @@ you're building for both iOS and Android, with both toolchains installed):
 
   # For iOS builds:
   flutter build ios-framework --xcframework --output=../ios_using_prebuilt_module/Flutter
-  open ../ios_using_prebuilt_module/IOSUsingPrebuiltModule.xcodeproj
+  open ../ios_using_prebuilt_module/IOSUsingPrebuiltModule.xcworkspace
 ```
 
 ## Requirements

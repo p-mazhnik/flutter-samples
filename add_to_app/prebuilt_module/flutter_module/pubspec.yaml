@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   provider: ^6.0.2
+  sentry_flutter: 7.8.0
 
 dev_dependencies:
   analysis_defaults:

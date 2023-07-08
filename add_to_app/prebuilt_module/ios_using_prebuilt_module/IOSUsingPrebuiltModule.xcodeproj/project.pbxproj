@@ -12,6 +12,15 @@
 		26DC0F712398363A00D41B08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26DC0F6F2398363A00D41B08 /* Main.storyboard */; };
 		26DC0F732398363B00D41B08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26DC0F722398363B00D41B08 /* Assets.xcassets */; };
 		26DC0F762398363B00D41B08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26DC0F742398363B00D41B08 /* LaunchScreen.storyboard */; };
+		29DFE5627CE5A87CF8C8382D /* Pods_IOSUsingPrebuiltModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901C9E06EB02EA6970181502 /* Pods_IOSUsingPrebuiltModule.framework */; };
+		A9D42FBF2A5A11E4007E3AC0 /* package_info_plus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D42FBB2A5A11E4007E3AC0 /* package_info_plus.xcframework */; };
+		A9D42FC02A5A11E4007E3AC0 /* package_info_plus.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9D42FBB2A5A11E4007E3AC0 /* package_info_plus.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A9D42FC12A5A11E4007E3AC0 /* SentryPrivate.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D42FBC2A5A11E4007E3AC0 /* SentryPrivate.xcframework */; };
+		A9D42FC22A5A11E4007E3AC0 /* SentryPrivate.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9D42FBC2A5A11E4007E3AC0 /* SentryPrivate.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A9D42FC32A5A11E4007E3AC0 /* sentry_flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D42FBD2A5A11E4007E3AC0 /* sentry_flutter.xcframework */; };
+		A9D42FC42A5A11E4007E3AC0 /* sentry_flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9D42FBD2A5A11E4007E3AC0 /* sentry_flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A9D42FC52A5A11E4007E3AC0 /* Sentry.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D42FBE2A5A11E4007E3AC0 /* Sentry.xcframework */; };
+		A9D42FC62A5A11E4007E3AC0 /* Sentry.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9D42FBE2A5A11E4007E3AC0 /* Sentry.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F77F88F1255396AD00309E51 /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77F88EF255396AD00309E51 /* App.xcframework */; };
 		F77F88F2255396AD00309E51 /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77F88F0255396AD00309E51 /* Flutter.xcframework */; };
 		F77F88F3255396B800309E51 /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F77F88EF255396AD00309E51 /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -25,8 +34,12 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A9D42FC22A5A11E4007E3AC0 /* SentryPrivate.xcframework in Embed Frameworks */,
 				F77F88F3255396B800309E51 /* App.xcframework in Embed Frameworks */,
+				A9D42FC62A5A11E4007E3AC0 /* Sentry.xcframework in Embed Frameworks */,
+				A9D42FC42A5A11E4007E3AC0 /* sentry_flutter.xcframework in Embed Frameworks */,
 				F77F88F4255396B800309E51 /* Flutter.xcframework in Embed Frameworks */,
+				A9D42FC02A5A11E4007E3AC0 /* package_info_plus.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C9644367E62109B2C67ABEE /* Pods-IOSUsingPrebuiltModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSUsingPrebuiltModule.debug.xcconfig"; path = "Target Support Files/Pods-IOSUsingPrebuiltModule/Pods-IOSUsingPrebuiltModule.debug.xcconfig"; sourceTree = "<group>"; };
 		26DC0F682398363A00D41B08 /* IOSUsingPrebuiltModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSUsingPrebuiltModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26DC0F6B2398363A00D41B08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26DC0F6D2398363A00D41B08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +55,12 @@
 		26DC0F722398363B00D41B08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26DC0F752398363B00D41B08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26DC0F772398363B00D41B08 /* Info-Debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Debug.plist"; sourceTree = "<group>"; };
+		3F818F31B6BDA89E1279C93D /* Pods-IOSUsingPrebuiltModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSUsingPrebuiltModule.release.xcconfig"; path = "Target Support Files/Pods-IOSUsingPrebuiltModule/Pods-IOSUsingPrebuiltModule.release.xcconfig"; sourceTree = "<group>"; };
+		901C9E06EB02EA6970181502 /* Pods_IOSUsingPrebuiltModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSUsingPrebuiltModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9D42FBB2A5A11E4007E3AC0 /* package_info_plus.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = package_info_plus.xcframework; path = "Flutter/$(CONFIGURATION)/package_info_plus.xcframework"; sourceTree = "<group>"; };
+		A9D42FBC2A5A11E4007E3AC0 /* SentryPrivate.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SentryPrivate.xcframework; path = "Flutter/$(CONFIGURATION)/SentryPrivate.xcframework"; sourceTree = "<group>"; };
+		A9D42FBD2A5A11E4007E3AC0 /* sentry_flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = sentry_flutter.xcframework; path = "Flutter/$(CONFIGURATION)/sentry_flutter.xcframework"; sourceTree = "<group>"; };
+		A9D42FBE2A5A11E4007E3AC0 /* Sentry.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Sentry.xcframework; path = "Flutter/$(CONFIGURATION)/Sentry.xcframework"; sourceTree = "<group>"; };
 		F77F88EF255396AD00309E51 /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = "Flutter/$(CONFIGURATION)/App.xcframework"; sourceTree = "<group>"; };
 		F77F88F0255396AD00309E51 /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = "Flutter/$(CONFIGURATION)/Flutter.xcframework"; sourceTree = "<group>"; };
 		F7C7993B251EF8C000650C20 /* Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Release.plist"; sourceTree = "<group>"; };
@@ -51,8 +71,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9D42FC12A5A11E4007E3AC0 /* SentryPrivate.xcframework in Frameworks */,
+				A9D42FC32A5A11E4007E3AC0 /* sentry_flutter.xcframework in Frameworks */,
+				A9D42FC52A5A11E4007E3AC0 /* Sentry.xcframework in Frameworks */,
 				F77F88F1255396AD00309E51 /* App.xcframework in Frameworks */,
 				F77F88F2255396AD00309E51 /* Flutter.xcframework in Frameworks */,
+				A9D42FBF2A5A11E4007E3AC0 /* package_info_plus.xcframework in Frameworks */,
+				29DFE5627CE5A87CF8C8382D /* Pods_IOSUsingPrebuiltModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,8 +87,13 @@
 		269CD2AC239B23BA0091DFB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A9D42FBB2A5A11E4007E3AC0 /* package_info_plus.xcframework */,
+				A9D42FBD2A5A11E4007E3AC0 /* sentry_flutter.xcframework */,
+				A9D42FBE2A5A11E4007E3AC0 /* Sentry.xcframework */,
+				A9D42FBC2A5A11E4007E3AC0 /* SentryPrivate.xcframework */,
 				F77F88EF255396AD00309E51 /* App.xcframework */,
 				F77F88F0255396AD00309E51 /* Flutter.xcframework */,
+				901C9E06EB02EA6970181502 /* Pods_IOSUsingPrebuiltModule.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -74,6 +104,7 @@
 				26DC0F6A2398363A00D41B08 /* IOSUsingPrebuiltModule */,
 				26DC0F692398363A00D41B08 /* Products */,
 				269CD2AC239B23BA0091DFB6 /* Frameworks */,
+				2DFF6F12DF1F334299B848F2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +130,15 @@
 			path = IOSUsingPrebuiltModule;
 			sourceTree = "<group>";
 		};
+		2DFF6F12DF1F334299B848F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C9644367E62109B2C67ABEE /* Pods-IOSUsingPrebuiltModule.debug.xcconfig */,
+				3F818F31B6BDA89E1279C93D /* Pods-IOSUsingPrebuiltModule.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,10 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26DC0F902398363C00D41B08 /* Build configuration list for PBXNativeTarget "IOSUsingPrebuiltModule" */;
 			buildPhases = (
+				C7ED27B27252204E3F508C8F /* [CP] Check Pods Manifest.lock */,
 				26DC0F642398363A00D41B08 /* Sources */,
 				26DC0F652398363A00D41B08 /* Frameworks */,
 				26DC0F662398363A00D41B08 /* Resources */,
 				269CD2B3239B23BA0091DFB6 /* Embed Frameworks */,
+				98112F522513510246BDAF44 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,6 +207,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		98112F522513510246BDAF44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOSUsingPrebuiltModule/Pods-IOSUsingPrebuiltModule-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOSUsingPrebuiltModule/Pods-IOSUsingPrebuiltModule-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOSUsingPrebuiltModule/Pods-IOSUsingPrebuiltModule-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7ED27B27252204E3F508C8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOSUsingPrebuiltModule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		26DC0F642398363A00D41B08 /* Sources */ = {
@@ -316,6 +400,7 @@
 		};
 		26DC0F912398363C00D41B08 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C9644367E62109B2C67ABEE /* Pods-IOSUsingPrebuiltModule.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -337,6 +422,7 @@
 		};
 		26DC0F922398363C00D41B08 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F818F31B6BDA89E1279C93D /* Pods-IOSUsingPrebuiltModule.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
