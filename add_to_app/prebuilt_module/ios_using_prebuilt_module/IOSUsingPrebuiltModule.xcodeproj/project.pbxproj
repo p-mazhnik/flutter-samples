@@ -21,6 +21,14 @@
 		A9D42FC42A5A11E4007E3AC0 /* sentry_flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9D42FBD2A5A11E4007E3AC0 /* sentry_flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A9D42FC52A5A11E4007E3AC0 /* Sentry.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D42FBE2A5A11E4007E3AC0 /* Sentry.xcframework */; };
 		A9D42FC62A5A11E4007E3AC0 /* Sentry.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9D42FBE2A5A11E4007E3AC0 /* Sentry.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A9D42FEC2A5A90A3007E3AC0 /* datadog_flutter_plugin.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D42FE82A5A90A3007E3AC0 /* datadog_flutter_plugin.xcframework */; };
+		A9D42FED2A5A90A4007E3AC0 /* datadog_flutter_plugin.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9D42FE82A5A90A3007E3AC0 /* datadog_flutter_plugin.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A9D42FEE2A5A90A4007E3AC0 /* Datadog.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D42FE92A5A90A3007E3AC0 /* Datadog.xcframework */; };
+		A9D42FEF2A5A90A4007E3AC0 /* Datadog.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9D42FE92A5A90A3007E3AC0 /* Datadog.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A9D42FF02A5A90A4007E3AC0 /* DatadogCrashReporting.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D42FEA2A5A90A3007E3AC0 /* DatadogCrashReporting.xcframework */; };
+		A9D42FF12A5A90A4007E3AC0 /* DatadogCrashReporting.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9D42FEA2A5A90A3007E3AC0 /* DatadogCrashReporting.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A9D42FF22A5A90A4007E3AC0 /* DictionaryCoder.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D42FEB2A5A90A3007E3AC0 /* DictionaryCoder.xcframework */; };
+		A9D42FF32A5A90A4007E3AC0 /* DictionaryCoder.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9D42FEB2A5A90A3007E3AC0 /* DictionaryCoder.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F77F88F1255396AD00309E51 /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77F88EF255396AD00309E51 /* App.xcframework */; };
 		F77F88F2255396AD00309E51 /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77F88F0255396AD00309E51 /* Flutter.xcframework */; };
 		F77F88F3255396B800309E51 /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F77F88EF255396AD00309E51 /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -35,10 +43,14 @@
 			dstSubfolderSpec = 10;
 			files = (
 				A9D42FC22A5A11E4007E3AC0 /* SentryPrivate.xcframework in Embed Frameworks */,
+				A9D42FED2A5A90A4007E3AC0 /* datadog_flutter_plugin.xcframework in Embed Frameworks */,
 				F77F88F3255396B800309E51 /* App.xcframework in Embed Frameworks */,
 				A9D42FC62A5A11E4007E3AC0 /* Sentry.xcframework in Embed Frameworks */,
 				A9D42FC42A5A11E4007E3AC0 /* sentry_flutter.xcframework in Embed Frameworks */,
+				A9D42FF32A5A90A4007E3AC0 /* DictionaryCoder.xcframework in Embed Frameworks */,
 				F77F88F4255396B800309E51 /* Flutter.xcframework in Embed Frameworks */,
+				A9D42FEF2A5A90A4007E3AC0 /* Datadog.xcframework in Embed Frameworks */,
+				A9D42FF12A5A90A4007E3AC0 /* DatadogCrashReporting.xcframework in Embed Frameworks */,
 				A9D42FC02A5A11E4007E3AC0 /* package_info_plus.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -61,6 +73,10 @@
 		A9D42FBC2A5A11E4007E3AC0 /* SentryPrivate.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SentryPrivate.xcframework; path = "Flutter/$(CONFIGURATION)/SentryPrivate.xcframework"; sourceTree = "<group>"; };
 		A9D42FBD2A5A11E4007E3AC0 /* sentry_flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = sentry_flutter.xcframework; path = "Flutter/$(CONFIGURATION)/sentry_flutter.xcframework"; sourceTree = "<group>"; };
 		A9D42FBE2A5A11E4007E3AC0 /* Sentry.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Sentry.xcframework; path = "Flutter/$(CONFIGURATION)/Sentry.xcframework"; sourceTree = "<group>"; };
+		A9D42FE82A5A90A3007E3AC0 /* datadog_flutter_plugin.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = datadog_flutter_plugin.xcframework; path = "Flutter/$(CONFIGURATION)/datadog_flutter_plugin.xcframework"; sourceTree = "<group>"; };
+		A9D42FE92A5A90A3007E3AC0 /* Datadog.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Datadog.xcframework; path = "Flutter/$(CONFIGURATION)/Datadog.xcframework"; sourceTree = "<group>"; };
+		A9D42FEA2A5A90A3007E3AC0 /* DatadogCrashReporting.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DatadogCrashReporting.xcframework; path = "Flutter/$(CONFIGURATION)/DatadogCrashReporting.xcframework"; sourceTree = "<group>"; };
+		A9D42FEB2A5A90A3007E3AC0 /* DictionaryCoder.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DictionaryCoder.xcframework; path = "Flutter/$(CONFIGURATION)/DictionaryCoder.xcframework"; sourceTree = "<group>"; };
 		F77F88EF255396AD00309E51 /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = "Flutter/$(CONFIGURATION)/App.xcframework"; sourceTree = "<group>"; };
 		F77F88F0255396AD00309E51 /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = "Flutter/$(CONFIGURATION)/Flutter.xcframework"; sourceTree = "<group>"; };
 		F7C7993B251EF8C000650C20 /* Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Release.plist"; sourceTree = "<group>"; };
@@ -71,13 +87,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9D42FF22A5A90A4007E3AC0 /* DictionaryCoder.xcframework in Frameworks */,
+				A9D42FEC2A5A90A3007E3AC0 /* datadog_flutter_plugin.xcframework in Frameworks */,
 				A9D42FC12A5A11E4007E3AC0 /* SentryPrivate.xcframework in Frameworks */,
 				A9D42FC32A5A11E4007E3AC0 /* sentry_flutter.xcframework in Frameworks */,
 				A9D42FC52A5A11E4007E3AC0 /* Sentry.xcframework in Frameworks */,
 				F77F88F1255396AD00309E51 /* App.xcframework in Frameworks */,
 				F77F88F2255396AD00309E51 /* Flutter.xcframework in Frameworks */,
+				A9D42FEE2A5A90A4007E3AC0 /* Datadog.xcframework in Frameworks */,
 				A9D42FBF2A5A11E4007E3AC0 /* package_info_plus.xcframework in Frameworks */,
 				29DFE5627CE5A87CF8C8382D /* Pods_IOSUsingPrebuiltModule.framework in Frameworks */,
+				A9D42FF02A5A90A4007E3AC0 /* DatadogCrashReporting.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +107,10 @@
 		269CD2AC239B23BA0091DFB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A9D42FE82A5A90A3007E3AC0 /* datadog_flutter_plugin.xcframework */,
+				A9D42FE92A5A90A3007E3AC0 /* Datadog.xcframework */,
+				A9D42FEA2A5A90A3007E3AC0 /* DatadogCrashReporting.xcframework */,
+				A9D42FEB2A5A90A3007E3AC0 /* DictionaryCoder.xcframework */,
 				A9D42FBB2A5A11E4007E3AC0 /* package_info_plus.xcframework */,
 				A9D42FBD2A5A11E4007E3AC0 /* sentry_flutter.xcframework */,
 				A9D42FBE2A5A11E4007E3AC0 /* Sentry.xcframework */,

@@ -2,15 +2,32 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+import 'package:datadog_flutter_plugin/datadog_flutter_plugin.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
 /// The entrypoint for the flutter module.
-void main() {
+void main() async {
   // This call ensures the Flutter binding has been set up before creating the
   // MethodChannel-based model.
   WidgetsFlutterBinding.ensureInitialized();
+
+  final configuration = DdSdkConfiguration(
+      clientToken: '<CLIENT_TOKEN>',
+      env: '<ENV_NAME>',
+      site: DatadogSite.us1,
+      trackingConsent: TrackingConsent.notGranted,
+      nativeCrashReportEnabled: true,
+      loggingConfiguration: LoggingConfiguration(
+        sendNetworkInfo: true,
+        printLogsToConsole: true,
+      ),
+      rumConfiguration: RumConfiguration(
+        applicationId: '<RUM_APPLICATION_ID>',
+      )
+  );
+  await DatadogSdk.instance.initialize(configuration);
 
   final model = CounterModel();
 

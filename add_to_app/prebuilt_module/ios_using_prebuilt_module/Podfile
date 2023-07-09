@@ -7,4 +7,6 @@ target 'IOSUsingPrebuiltModule' do
 
   # Pods for IOSUsingPrebuiltModule
   pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '8.8.0'
+  pod 'DatadogSDK' => '1.19.0'
+  pod 'DatadogSDKCrashReporting' => '1.19.0'
 end

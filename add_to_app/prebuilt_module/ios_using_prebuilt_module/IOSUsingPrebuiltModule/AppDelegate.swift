@@ -4,6 +4,7 @@
 
 import UIKit
 import Flutter
+import Sentry
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Instantiate Flutter engine
         self.flutterEngine = FlutterEngine(name: "io.flutter", project: nil)
         self.flutterEngine?.run(withEntrypoint: nil)
+      
+        SentrySDK.start { options in
+            options.dsn = ""
+            options.debug = true
+        }
 
         return true
     }
